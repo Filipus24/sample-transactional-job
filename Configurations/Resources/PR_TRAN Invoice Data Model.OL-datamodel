@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel schemaVersion="1.0.0.4" name="PR_TRAN Invoice Data Model" version="1" xmlns="http://www.objectiflune.com/connectschemas/DataModelConfig" xsi:schemaLocation="http://www.objectiflune.com/connectschemas/DataModelConfig http://www.objectiflune.com/connectschemas/DataModelConfig/1_0_0_4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <field type="string" name="ExtraData" required="true"/>
+    <field type="string" name="LanguageCode" required="true"/>
+    <field type="string" name="Locale" required="true"/>
+    <field type="string" name="OrderNumber" required="true"/>
+    <field type="string" name="CustomerPO" required="true"/>
+    <field type="string" name="CustomerNumber" required="true"/>
+    <field type="string" name="Company" required="true"/>
+    <field type="datetime" name="Date" required="true"/>
+    <field type="datetime" name="DeliveryDate" required="true"/>
+    <field type="datetime" name="ReceivedDate" required="true"/>
+    <field type="datetime" name="InvDueDate" required="true"/>
+    <field type="string" name="ContactFirstName" required="true"/>
+    <field type="string" name="ContactLastName" required="true"/>
+    <field type="string" name="ContactPhone" required="true"/>
+    <field type="string" name="ContactEmail" required="true"/>
+    <field type="string" name="StreetAddress" required="true"/>
+    <field type="string" name="City" required="true"/>
+    <field type="string" name="State" required="true"/>
+    <field type="string" name="Country" required="true"/>
+    <field type="string" name="ZipCode" required="true"/>
+    <field type="string" name="BillTo" required="true"/>
+    <field type="string" name="ShipTo" required="true"/>
+    <field type="currency" name="SubTotal" required="true"/>
+    <field type="currency" name="Tax" required="true"/>
+    <field type="currency" name="Total" required="true"/>
+    <field type="string" name="InvCurrencyCode" required="true"/>
+    <field type="string" name="InvStatus" required="true"/>
+    <field type="string" name="Reminders" required="true"/>
+    <field type="string" name="SalesRep" required="true"/>
+    <table name="Products" required="true">
+        <field type="string" name="ExtraData" required="true"/>
+        <field type="string" name="Number" required="true"/>
+        <field type="string" name="Description" required="true"/>
+        <field type="currency" name="UnitPrice" required="true"/>
+        <field type="integer" name="Quantity" required="true"/>
+        <field type="currency" name="Amount" required="true"/>
+    </table>
+</datamodel>
